@@ -10,6 +10,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" />
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/07d3dd4226.js" crossorigin="anonymous"></script>
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -46,13 +48,13 @@
                     <h3>Analytics</h3>
                 </a>
                 <a href="#">
-                    <span class="material-symbols-sharp">grid_view</span>
-                    <h3>Messages</h3>
-                    <span class="message-count">26</span>
-                </a>
-                <a href="#">
                     <span class="material-symbols-sharp">inventory</span>
                     <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">message</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">report</span>
@@ -83,7 +85,9 @@
             <div class="insights">
                 <!-- Insight card item start -->
                 <div class="insight-card sales">
-                    <span class="material-icons-sharp">analytics</span>
+                    <div class="icon">
+                        <span class="material-icons-sharp">analytics</span>
+                    </div>
                     <div class="middle">
                         <div class="left content">
                             <h3>Total Sales</h3>
@@ -99,14 +103,16 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <small class="text-muted">Last 24 Hours</small>
+                        <small class="text-muted"><i class="fa fa-clock"></i>&nbsp; Last 24 Hours</small>
                     </div>
                 </div>
                 <!-- Insight card item end -->
 
                 <!-- Insight card item start -->
                 <div class="insight-card expenses">
-                    <span class="material-icons-sharp">bar_chart</span>
+                    <div class="icon">
+                        <span class="material-icons-sharp">bar_chart</span>
+                    </div>
                     <div class="middle">
                         <div class="left content">
                             <h3>Total Expenses</h3>
@@ -129,7 +135,9 @@
 
                 <!-- Insight card item start -->
                 <div class="insight-card income">
-                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="icon">
+                        <span class="material-icons-sharp">stacked_line_chart</span>
+                    </div>
                     <div class="middle">
                         <div class="left content">
                             <h3>Total Income</h3>
@@ -150,7 +158,71 @@
                 </div>
                 <!-- Insight card item end -->
             </div>
+
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Samsung A33 Smartphone</td>
+                            <td>82646</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a href="#" class="primary">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Samsung Galaxy S22 Plus (128GB)</td>
+                            <td>52622</td>
+                            <td>Completed</td>
+                            <td class="success">Success</td>
+                            <td><a href="#" class="primary">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Apple Iphone 13</td>
+                            <td>56595</td>
+                            <td>Completed</td>
+                            <td class="success">Success</td>
+                            <td><a href="#" class="primary">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Samsung A33 Smartphone</td>
+                            <td>82646</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a href="#" class="primary">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Samsung A33 Smartphone</td>
+                            <td>82646</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a href="#" class="primary">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Samsung A33 Smartphone</td>
+                            <td>82646</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a href="#" class="primary">Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="show-all">
+                    <a href="" class="primary">Show All</a>
+                </div>
+            </div>
         </main>
+        <!-- END OF MAIN -->
+        
         <div class="right-sidebar">
 
         </div>

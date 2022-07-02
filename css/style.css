@@ -16,7 +16,7 @@
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
-    --card-border-radius: 32px;
+    --card-border-radius: 25px;
     --border-radius-1: 7px;
     --border-radius-2: 13px;
     --border-radius-3: 20px;
@@ -272,7 +272,7 @@ main .insights .insight-card:hover{
     box-shadow: none;
 }
 
-main .insights .insight-card span{
+main .insights .insight-card .icon span{
     background: var(--color-primary);
     padding: 8px;
     border-radius: 50%;
@@ -280,10 +280,10 @@ main .insights .insight-card span{
     font-size: 32px;
 }
 
-main .insights .insight-card.expenses span{
+main .insights .insight-card.expenses .icon span{
     background-color: var(--color-danger);
 }
-main .insights .insight-card.income span{
+main .insights .insight-card.income .icon span{
     background-color: var(--color-success);
 }
 
@@ -298,10 +298,16 @@ main .insights h3{
     font-size: 16px;
 }
 
+main .insights small{
+    margin-top: 18px;
+    display: block;
+}
+
 main .insights .progress{
     width: 92px;
     height: 92px;
     border-radius: 50%;
+    position: relative;
 }
 
 main .insights svg{
@@ -330,6 +336,54 @@ main .insights .expenses svg circle{
 main .insights .income svg circle{
     stroke-dashoffset: 35;
     stroke-dasharray: 110;
+}
+
+main .insights .progress .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .recent-orders{
+    margin-top: 32px;
+}
+
+main .recent-orders h2{
+    margin-bottom: 15px;
+}
+
+main .recent-orders table{
+    width: 100%;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+main .recent-orders table:hover{
+    box-shadow: none;
+}
+
+main table tbody td{
+    height: 42px;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td{
+    border: none;
+}
+
+main .recent-orders .show-all{
+    text-align: center;
+    padding: 20px 0;
 }
 
 
